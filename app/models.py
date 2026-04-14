@@ -23,7 +23,6 @@ class Movie(db.Model):
             'title': self.title,
             'description': self.description,
             'poster': url_for('getImage', filename = self.poster),
-            'created_at': self.created_at
         }
         
     def __repr__(self):
